@@ -1,6 +1,6 @@
 # FairDream, GridSearch and Baseline models for fairness in binary classification - Benchmark over features of Census income dataset
 
-To investigate the proper effects of  FairDream’s correction (distorted group attention through sample weights),  we compared it in a benchmark experiment with a closely related fairness method:	GridSearch [Agarwal et al., 2018], also an in-processing method of cost-sensitive classification. The full results of our experiment are accessible in this anonymized GitHub benchmark repository.
+To investigate the proper effects of  FairDream’s correction (distorted group attention through sample weights),  we compared it in a benchmark experiment with a closely related fairness method:	GridSearch [Agarwal et al., 2018], also an in-processing method of cost-sensitive classification. The full results of our experiment are accessible in this GitHub benchmark repository.
 
 ## Experimental conditions
 We conducted the experiment over multiple types of models. To grant stability of the experiments, we selected the event predicted by the model (earning over $50,000 or not) for the threshold maximizing the F1-score, commonly used in machine-learning for imbalanced classification as in Census, and applied the default parameters below: 
