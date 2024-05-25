@@ -24,7 +24,7 @@ In this repository, you can read the results in the following way:
 
 You will find the plots of FairDream, GridSearch and the initial Baseline model to equalize between groups overall positive rates, true positive rates, false positive rates, AUCs (ROC and PR) and calibration errors (as areas to a perfectly calibrated curve). Take for instance the competition which happened for random forest on sex. The plots highlight FairDream to better equalize true and false positive rates between women and men than the Baseline and GridSearch models, **towards Equalized Odds**:
 
-![rf_sex_equalized_odds](https://github.com/thomsouverain/weights_distortion_impact/assets/74717797/8e0470c4-f7c3-4bc9-bb9d-a8ee11f858b8)
+![rf_sex_equalized_odds](https://github.com/thomsouverain/weights_distortion_impact/blob/main/rf_sex_equalized_odds.png)
 
 :star2: **Over all features**
 
