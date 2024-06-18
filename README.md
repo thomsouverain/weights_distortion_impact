@@ -47,7 +47,7 @@ For instance, in "max_gap_groups -> GridSearch, FairDream", we see on 16 feature
 Whereas on the side of Demographic Parity, GridSearch better equalizes the overall positive rates (FairDream corresponding to the highest gaps between groups in 9/16 cases), this relation reverses for true and false positive rates. Over all features, FairDream achieves better results to equalize false positive rates and, more, true positive rates (GridSearch reaching the highest gaps on 10/16 features):
 
 
-|                | **all_metrics** | **calibration_error** | **roc_auc** | **pr_auc** | **overall_positive_rate** | **false_positive_rate** | **true_positive_rate** |
+|                | **all_metrics** | **calibration_error** | **roc_auc** | **pr_auc** | **overall_positive rate** | **false_positive rate** | **true_positive rate** |
 | -------------- | --------------- | --------------------- | ----------- | ---------- | ------------------------- | ----------------------- | ---------------------- |
 | **GridSearch** | 57              | 8                     | 11          | 12         | 7                         | 9                       | 10                     |
 | **FairDream**  | 35              | 8                     | 3           | 2          | 9                         | 7                       | 6                      
