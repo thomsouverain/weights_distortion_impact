@@ -1,6 +1,6 @@
 # FairDream, GridSearch and Baseline models for fairness in binary classification - Benchmark over features of Census income dataset
 
-To investigate the proper effects of  FairDream’s correction (distorted group attention through sample weights),  we compared it in a benchmark experiment with a closely related fairness method:	GridSearch [Agarwal et al., 2018], also an in-processing method of cost-sensitive classification. The full results of our experiment are accessible in this GitHub benchmark repository.
+To investigate the proper effects of  FairDream’s correction (distorted group attention through sample weights),  we compared it in a benchmark experiment with a closely related fairness method:	GridSearch [Agarwal et al., 2018], also an in-processing method of cost-sensitive classification. The full results of our experiment are accessible in this anonymized GitHub benchmark repository.
 
 ## Experimental conditions
 We conducted the experiment over multiple types of models. To grant stability of the experiments, we selected the event predicted by the model (earning over $50,000 or not) for the threshold maximizing the F1-score, commonly used in machine-learning for imbalanced classification as in Census, and applied the default parameters below: 
@@ -42,7 +42,7 @@ You will find the plots of FairDream, GridSearch and the initial Baseline model 
 
 Indeed, it can be that a fairness method bridges the gap between groups, though, without necessarily enhancing the situation of the worst treated group. Therefore, relative and absolute counts on scores complement each other to compare our fairness methods. 
 
-For instance, in "max_gap_groups -> GridSearch, FairDream", we see on 16 features of XGBoost, random forests and logistic regression where correction took place (the results on neural networks being non significant, as FairDream and GridSearch implemented random classifiers to reach perfect Demographic Parity), the performances of GridSearch and FairDream when set the task of equalizing overall positive rates (corresponding to Demographic Parity). 
+For instance, in "max_gap_groups -> GridSearch_FairDream", we see on 16 features of XGBoost, random forests and logistic regression where correction took place (the results on neural networks being non significant, as FairDream and GridSearch implemented random classifiers to reach perfect Demographic Parity), the performances of GridSearch and FairDream when set the task of equalizing overall positive rates (corresponding to Demographic Parity). 
 
 Whereas on the side of Demographic Parity, GridSearch better equalizes the overall positive rates (FairDream corresponding to the highest gaps between groups in 9/16 cases), this relation reverses for true and false positive rates. Over all features, FairDream achieves better results to equalize false positive rates and, more, true positive rates (GridSearch reaching the highest gaps on 10/16 features):
 
